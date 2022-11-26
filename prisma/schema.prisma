@@ -6,6 +6,27 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model kayttaja {
+  id             Int    @id @default(autoincrement())
+  kayttajatunnus String @db.Text
+  salasana       String @db.Text
+}
+
+model auto {
+  id              Int    @id @default(autoincrement())
+  malli           String @db.Text
+  rekisteritunnus String @db.Text
+  vuosi           String @db.Text
+  moottorinKoko   String @db.Text
+  mittarilukema   String @db.Text
+  hinta           Int
+  verot           Int
+  myyntipaikka    String @db.Text
+  huomioita       String @db.Text
+  kuvanUrl        String @db.Text
+  kayttajaId      Int
 }
