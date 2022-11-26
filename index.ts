@@ -1,5 +1,7 @@
 import express from "express";
 import errorhandler from "./errors/errorhandler";
+import apiCarsRouter from "./routes/apiCars";
+import apiUsersRouter from "./routes/apiUsers";
 import path from "path";
 import dotenv from "dotenv";
 
@@ -11,6 +13,12 @@ const app: express.Application = express();
 const port: number = Number(process.env.PORT);
 
 app.use(express.static(path.resolve(__dirname, "public")));
+
+app.use("/api/cars", apiCarsRouter);
+
+app.use("/api/users", apiUsersRouter);
+
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 //middleware -  error handling
 app.use(errorhandler);
