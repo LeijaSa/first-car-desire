@@ -80,7 +80,7 @@ const Carlist: React.FC<Props> = (props: Props): React.ReactElement => {
          haettu: false,
       });
 
-      let url = id ? `/api/autot/${id}` : `/api/autot`;
+      let url = id ? `/api/cars/${id}` : `/api/cars`;
 
       let asetukset: fetchAsetukset = {
          method: metodi || "GET",

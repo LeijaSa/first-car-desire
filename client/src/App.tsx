@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Container, Typography } from "@mui/material";
-//import Login from "./components/Login";
-//import Carlist from "./components/Carlist";
+import Login from "./components/Login";
+import Carlist from "./components/Carlist";
 import { Route, Routes } from "react-router-dom";
 
 const App: React.FC = (): React.ReactElement => {
@@ -15,6 +15,10 @@ const App: React.FC = (): React.ReactElement => {
          <Typography variant="h4" sx={{ marginBottom: 2, marginTop: 2 }}>
             Autolistaus
          </Typography>
+         <Routes>
+            <Route path="/login" element={<Login setToken={setToken} />} />
+            <Route path="/" element={<Carlist token={token} />} />
+         </Routes>
       </Container>
    );
 };
