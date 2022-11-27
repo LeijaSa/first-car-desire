@@ -14,6 +14,7 @@ const app: express.Application = express();
 
 const port: number = Number(process.env.PORT);
 
+//Token, i.e. a string that is digitally signed for secure communication between client and server, Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token.
 const checkToken = (
    req: express.Request,
    res: express.Response,
