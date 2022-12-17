@@ -4,4 +4,4 @@ In the spring 2022 I was about to buy my very first car. I went through several 
 
 This is a study assignment, made using TS / React / Material UI.
 
-The previous version of the app works here: https://autolistaus-clesa.herokuapp.com/login
+
