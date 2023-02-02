@@ -10,7 +10,7 @@ This is a study assignment, made using TS / React / Material UI.
 
 ## Setup
 
-The sql dumb for this app is about to come during Feb 2023
+The sql dump for this app is about to come during Feb 2023
 To run this project, install it locally using npm.  
 Terminal: npm start for server and api  
 Username and password for the app: gurli
