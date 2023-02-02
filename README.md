@@ -10,6 +10,7 @@ This is a study assignment, made using TS / React / Material UI.
 
 ## Setup
 
-To run this project, install it locally using npm:
-npm install & npm start for server and api
-username and password for the app: gurli
+The sql dumb for this app is about to come during Feb 2023
+To run this project, install it locally using npm.  
+Terminal: npm start for server and api  
+Username and password for the app: gurli
